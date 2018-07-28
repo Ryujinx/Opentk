@@ -11,10 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Rewrite", "src\Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK", "src\OpenTK\OpenTK.csproj", "{A37A7E14-0000-0000-0000-000000000000}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.Android", "src\OpenTK\OpenTK.Android.csproj", "{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.iOS", "src\OpenTK\OpenTK.iOS.csproj", "{88368190-E3DF-4EBE-ACAA-7B1779F376CA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.GLControl", "src\OpenTK.GLControl\OpenTK.GLControl.csproj", "{A625BE88-0000-0000-0000-000000000000}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK.GLWidget", "src\OpenTK.GLWidget\OpenTK.GLWidget.csproj", "{A625BE87-0000-0000-0000-000000000000}"
@@ -45,6 +41,12 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OpenTK.Tests.Generators", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTK.Standard", "src\OpenTK\OpenTK.Standard.csproj", "{67F02FD3-8F7F-4D89-8551-359993271CA3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VkTest", "VkTest\VkTest.csproj", "{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vk.generator", "src\vk.generator\vk.generator.csproj", "{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vk.rewrite", "src\vk.rewrite\vk.rewrite.csproj", "{3E9B1C4D-BCB4-418A-A94E-DD164A19C6A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,14 +69,6 @@ Global
 		{A37A7E14-0000-0000-0000-000000000000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A37A7E14-0000-0000-0000-000000000000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A37A7E14-0000-0000-0000-000000000000}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1648ACE1-E7D0-41CB-9A0E-C2A9D76C13A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88368190-E3DF-4EBE-ACAA-7B1779F376CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88368190-E3DF-4EBE-ACAA-7B1779F376CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88368190-E3DF-4EBE-ACAA-7B1779F376CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88368190-E3DF-4EBE-ACAA-7B1779F376CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A625BE88-0000-0000-0000-000000000000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A625BE88-0000-0000-0000-000000000000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A625BE88-0000-0000-0000-000000000000}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -103,6 +97,18 @@ Global
 		{67F02FD3-8F7F-4D89-8551-359993271CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67F02FD3-8F7F-4D89-8551-359993271CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67F02FD3-8F7F-4D89-8551-359993271CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9B1C4D-BCB4-418A-A94E-DD164A19C6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9B1C4D-BCB4-418A-A94E-DD164A19C6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9B1C4D-BCB4-418A-A94E-DD164A19C6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9B1C4D-BCB4-418A-A94E-DD164A19C6A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

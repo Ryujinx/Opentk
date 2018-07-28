@@ -107,8 +107,17 @@ This version can be found at https://github.com/emmauss/opentk</Description>
   </ProjectExtensions>
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
+  <Target Name="AutoGenerateBindings" BeforeTargets="CoreCompile">
+    <Message Text="Generating bindings." />
+    <Exec Command="dotnet run --project ..\vk.generator\vk.generator.csproj --out $(MSBuildThisFileDirectory)Graphics\Vulkan\Generated" />
+  </Target>
+  <Target Name="RewriteCalliStubs" AfterTargets="Build" Condition="'$(DisableCalli)' != 'true'">
+    <Message Text="Rewriting calli stubs." />
+    <Exec Command="dotnet run --project ..\vk.rewrite\vk.rewrite.csproj --vkdll $(TargetPath)" />
+  </Target>
 </Project>

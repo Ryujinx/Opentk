@@ -1,6 +1,8 @@
 OpenTK
 ======
 
+This fork contains modified dependencies from mellinoe's Vulkan bindings, you can get the original from [here](https://github.com/mellinoe/vk).
+
 
 ### MAINTAINERS WANTED
 

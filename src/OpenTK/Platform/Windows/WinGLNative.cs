@@ -45,9 +45,9 @@ namespace OpenTK.Platform.Windows
         private const ExtendedWindowStyle ParentStyleEx = ExtendedWindowStyle.WindowEdge | ExtendedWindowStyle.ApplicationWindow;
         private const ExtendedWindowStyle ChildStyleEx = 0;
 #if NETSTANDARD
-        private readonly IntPtr Instance = Functions.GetModuleHandle(typeof(WinGLNative).Module.Name);
+        public readonly IntPtr Instance = Functions.GetModuleHandle(typeof(WinGLNative).Module.Name);
 #else
-        private readonly IntPtr Instance = Marshal.GetHINSTANCE(typeof(WinGLNative).Module);
+        public readonly IntPtr Instance = Marshal.GetHINSTANCE(typeof(WinGLNative).Module);
 #endif
         private readonly IntPtr ClassName = Marshal.StringToHGlobalAuto(Guid.NewGuid().ToString());
         private readonly WindowProcedure WindowProcedureDelegate;
@@ -95,6 +95,8 @@ namespace OpenTK.Platform.Windows
         private int cursor_visible_count = 0;
 
         private static readonly object SyncRoot = new object();
+
+        public IntPtr Handle { get => window.WindowHandle; }
 
         public WinGLNative(int x, int y, int width, int height, string title, GameWindowFlags options, DisplayDevice device)
         {

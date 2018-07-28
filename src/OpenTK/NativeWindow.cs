@@ -29,6 +29,7 @@ using System.ComponentModel;
 using System.Drawing;
 #endif
 using OpenTK.Graphics;
+using OpenTK.Graphics.Vulkan;
 using OpenTK.Input;
 using OpenTK.Platform;
 
@@ -48,6 +49,36 @@ namespace OpenTK
 
         private bool events;
         private bool previous_cursor_visible = true;
+
+        public VkResult CreateVulkanSurface(VkInstance instance, out VkSurfaceKHR surface)
+        {
+            IPlatformFactory factory = Factory.Default;
+
+            if (implementation is Platform.Windows.WinGLNative win)
+            {
+                VkWin32SurfaceCreateInfoKHR createInfo = VkWin32SurfaceCreateInfoKHR.New();
+                createInfo.hwnd = win.Handle;
+                createInfo.hinstance = win.Instance;
+
+                return VK.CreateWin32SurfaceKHR(instance, ref createInfo, IntPtr.Zero, out surface);
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public IntPtr[] RequiredVulkanExtensions()
+        {
+            if (implementation is Platform.Windows.WinGLNative win)
+            {
+                return new IntPtr[] { Strings.VK_KHR_WIN32_SURFACE_EXTENSION_NAME };
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+        }
 
         /// <summary>
         /// System.Threading.Thread.CurrentThread.ManagedThreadId of the thread that created this <see cref="OpenTK.NativeWindow"/>.
