@@ -6,8 +6,11 @@ using System.Runtime.InteropServices;
 #if !VALIDATE
 using System.Diagnostics;
 #endif
+
 namespace OpenTK.Graphics.Vulkan
 {
+    using Debug = System.Diagnostics.Debug;
+
     public unsafe class NativeList<T> : IEnumerable<T>, IDisposable where T : struct
     {
         private byte* _dataPtr;
