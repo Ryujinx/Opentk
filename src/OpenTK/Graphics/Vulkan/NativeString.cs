@@ -4,14 +4,14 @@ using System.Text;
 
 namespace OpenTK.Graphics.Vulkan
 {
-    public unsafe class FixedUtf8String : IDisposable
+    public unsafe class NativeString : IDisposable
     {
         private GCHandle _handle;
         private uint _numBytes;
 
         public byte* StringPtr => (byte*)_handle.AddrOfPinnedObject().ToPointer();
 
-        public FixedUtf8String(string s)
+        public NativeString(string s)
         {
             if (s == null)
             {
@@ -46,9 +46,9 @@ namespace OpenTK.Graphics.Vulkan
             _handle.Free();
         }
 
-        public static implicit operator byte* (FixedUtf8String utf8String) => utf8String.StringPtr;
-        public static implicit operator IntPtr (FixedUtf8String utf8String) => new IntPtr(utf8String.StringPtr);
-        public static implicit operator FixedUtf8String(string s) => new FixedUtf8String(s);
-        public static implicit operator string(FixedUtf8String utf8String) => utf8String.GetString();
+        public static implicit operator byte* (NativeString utf8String) => utf8String.StringPtr;
+        public static implicit operator IntPtr (NativeString utf8String) => new IntPtr(utf8String.StringPtr);
+        public static implicit operator NativeString(string s) => new NativeString(s);
+        public static implicit operator string(NativeString utf8String) => utf8String.GetString();
     }
 }

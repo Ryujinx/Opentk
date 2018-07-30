@@ -3,7 +3,7 @@
     <AssemblyName>OpenTK</AssemblyName>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>OpenTK</RootNamespace>
-	<DefineConstants>$(DefineConstants);WIN32;CARBON;X11;SDL2;OPENGL;OPENGLES;MINIMAL</DefineConstants>    
+	<DefineConstants>$(DefineConstants);WIN32;CARBON;X11;OPENGL;OPENGLES;MINIMAL</DefineConstants>    
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
@@ -68,8 +68,8 @@
   </ItemGroup>
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
-    <Description>The Open Toolkit library (OpenTK) is an advanced, low-level C# wrapper for OpenGL, OpenGL ES and OpenAL.
+    <Version>1.1.7</Version>
+    <Description>The Open Toolkit library (OpenTK) is an advanced, low-level C# wrapper for OpenGL, OpenGL ES, OpenAL and Vulkan.
            It is suitable for games, scientific visualizations and projects that require 3d graphics, audio or compute functionality.
 
            Features
@@ -83,7 +83,9 @@ This version can be found at https://github.com/emmauss/opentk</Description>
     <Authors>emmaus</Authors>
     <Company>emmaus</Company>
     <Product>OpenTK</Product>
-    <PackageProjectUrl>https://github.com/emmauss/opentk</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Ryujinx/Opentk</PackageProjectUrl>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
+    <FileVersion>1.1.7.0</FileVersion>
   </PropertyGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Debug\Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ..\..\OpenTK.snk -debug -netstandard" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" />

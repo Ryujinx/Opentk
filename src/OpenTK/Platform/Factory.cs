@@ -46,8 +46,9 @@ namespace OpenTK.Platform
             Toolkit.Init();
 
             // Create regular platform backend
+            if (false) { }
 #if SDL2
-            if (Configuration.RunningOnSdl2)
+            else if (Configuration.RunningOnSdl2)
             {
                 Default = new SDL2.Sdl2Factory();
             }

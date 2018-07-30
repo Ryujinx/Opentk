@@ -164,7 +164,7 @@ namespace OpenTK
             return t != null;
         }
 
-        #if SDL2
+#if SDL2
         private static bool DetectSdl2()
         {
             bool supported = false;
@@ -221,7 +221,12 @@ namespace OpenTK
 
             return supported;
         }
-        #endif
+#else
+        private static bool DetectSdl2()
+        {
+            return false;
+        }
+#endif
 
         private static void DetectUnix(out bool unix, out bool linux, out bool macos)
         {
@@ -298,7 +303,7 @@ namespace OpenTK
 
                     initialized = true;
 #endif
-                    Debug.Print("Detected configuration: {0} / {1}",
+                        Debug.Print("Detected configuration: {0} / {1}",
                         RunningOnWindows ? "Windows" : RunningOnLinux ? "Linux" : RunningOnMacOS ? "MacOS" :
                         runningOnUnix ? "Unix" : RunningOnX11 ? "X11" : "Unknown Platform",
                         RunningOnMono ? "Mono" : ".Net");

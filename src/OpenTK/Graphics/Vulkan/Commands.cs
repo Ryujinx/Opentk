@@ -9,10 +9,24 @@ namespace OpenTK.Graphics.Vulkan
     {
         private static NativeLibrary s_nativeLib;
 
-        static VK()
+        static public void LoadFunctions()
         {
-            s_nativeLib = LoadNativeLibrary();
+            if (s_nativeLib == null)
+            {
+                s_nativeLib = LoadNativeLibrary();
+            }
+
             LoadFunctionPointers();
+        }
+
+        public static IntPtr LoadFunctionPointer(string functionName)
+        {
+            if (s_nativeLib == null)
+            {
+                s_nativeLib = LoadNativeLibrary();
+            }
+
+            return s_nativeLib.LoadFunctionPointer(functionName);
         }
 
         private static NativeLibrary LoadNativeLibrary()

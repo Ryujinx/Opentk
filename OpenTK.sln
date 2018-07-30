@@ -41,8 +41,6 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OpenTK.Tests.Generators", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTK.Standard", "src\OpenTK\OpenTK.Standard.csproj", "{67F02FD3-8F7F-4D89-8551-359993271CA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VkTest", "VkTest\VkTest.csproj", "{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vk.generator", "src\vk.generator\vk.generator.csproj", "{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vk.rewrite", "src\vk.rewrite\vk.rewrite.csproj", "{3E9B1C4D-BCB4-418A-A94E-DD164A19C6A2}"
@@ -97,10 +95,6 @@ Global
 		{67F02FD3-8F7F-4D89-8551-359993271CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67F02FD3-8F7F-4D89-8551-359993271CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67F02FD3-8F7F-4D89-8551-359993271CA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0F33C2F-B9BD-4E55-85E3-6C1760D39DE9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3766DF33-E28B-402D-9EE1-975C2AFB5EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU

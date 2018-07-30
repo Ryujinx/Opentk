@@ -50,7 +50,7 @@ namespace OpenTK
         private bool events;
         private bool previous_cursor_visible = true;
 
-        public VkResult CreateVulkanSurface(VkInstance instance, out VkSurfaceKHR surface)
+        public unsafe VkResult CreateVulkanSurface(VkInstance instance, out VkSurfaceKHR surface)
         {
             IPlatformFactory factory = Factory.Default;
 
@@ -62,9 +62,24 @@ namespace OpenTK
 
                 return VK.CreateWin32SurfaceKHR(instance, ref createInfo, IntPtr.Zero, out surface);
             }
+            else if (implementation is Platform.X11.X11GLNative x11)
+            {
+                Platform.X11.X11WindowInfo info = x11.WindowInfo as Platform.X11.X11WindowInfo;
+
+                Graphics.Vulkan.Xlib.Window window = new Graphics.Vulkan.Xlib.Window();
+                window.Value = info.WindowHandle;
+
+                VkXlibSurfaceCreateInfoKHR createInfo = VkXlibSurfaceCreateInfoKHR.New();
+                createInfo.dpy = (Graphics.Vulkan.Xlib.Display*)info.Display;
+                createInfo.window = window;
+
+                return VK.CreateXlibSurfaceKHR(instance, &createInfo, IntPtr.Zero, out surface);
+            }
             else
             {
-                throw new NotImplementedException();
+                //If someone knows how to create a MoltenVK surface, please add it here
+
+                throw new NotImplementedException(implementation.ToString());
             }
         }
 
@@ -72,11 +87,15 @@ namespace OpenTK
         {
             if (implementation is Platform.Windows.WinGLNative win)
             {
-                return new IntPtr[] { Strings.VK_KHR_WIN32_SURFACE_EXTENSION_NAME };
+                return new IntPtr[] { VulkanStrings.VK_KHR_WIN32_SURFACE_EXTENSION_NAME };
+            }
+            else if (implementation is Platform.X11.X11GLNative x11)
+            {
+                return new IntPtr[] { VulkanStrings.VK_KHR_XLIB_SURFACE_EXTENSION_NAME };
             }
             else
             {
-                throw new NotImplementedException();
+                throw new NotImplementedException(implementation.ToString());
             }
         }
 

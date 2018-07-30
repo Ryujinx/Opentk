@@ -1,10 +1,10 @@
 ﻿namespace OpenTK.Graphics.Vulkan
 {
-    public struct Version
+    public struct VulkanVersion
     {
         private readonly uint value;
 
-        public Version(uint major, uint minor, uint patch)
+        public VulkanVersion(uint major, uint minor, uint patch)
         {
             value = major << 22 | minor << 12 | patch;
         }
@@ -15,7 +15,7 @@
 
         public uint Patch => (value >> 22) & 0xfff;
 
-        public static implicit operator uint(Version version)
+        public static implicit operator uint(VulkanVersion version)
         {
             return version.value;
         }
