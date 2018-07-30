@@ -68,24 +68,24 @@
   </ItemGroup>
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.1.7</Version>
+    <Version>1.0.5</Version>
     <Description>The Open Toolkit library (OpenTK) is an advanced, low-level C# wrapper for OpenGL, OpenGL ES, OpenAL and Vulkan.
            It is suitable for games, scientific visualizations and projects that require 3d graphics, audio or compute functionality.
 
            Features
-           - Create cutting-edge graphics with OpenGL 4.4 and OpenGL ES 3.0
+           - Create cutting-edge graphics with OpenGL 4.6, OpenGL ES 3.0 and Vulkan
            - Use the .Net/Mono language of your choice: C#, F#, VB.Net, Boo, IronPython, IronRuby
-           - Develop faster with inline documentation and strongly-typed enumerations for all OpenGL and OpenAL functions
+           - Develop faster with inline documentation and strongly-typed enumerations for all OpenGL, OpenAL and Vulkan functions
 
            This is a .NET Core-compatible version of OpenTK.
-This version can be found at https://github.com/emmauss/opentk</Description>
+This version can be found at https://github.com/Ryujinx/Opentk</Description>
     <PackageId>OpenTK.NetStandard</PackageId>
     <Authors>emmaus</Authors>
     <Company>emmaus</Company>
     <Product>OpenTK</Product>
     <PackageProjectUrl>https://github.com/Ryujinx/Opentk</PackageProjectUrl>
-    <AssemblyVersion>1.1.7.0</AssemblyVersion>
-    <FileVersion>1.1.7.0</FileVersion>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <FileVersion>1.0.5.0</FileVersion>
   </PropertyGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="$(OutputPath)..\..\..\..\Generator.Rewrite\bin\Debug\Rewrite.exe --assembly $(OutputPath)OpenTK.dll --signing-key ..\..\OpenTK.snk -debug -netstandard" Condition="$(OS) == 'Windows_NT' and $(Configuration) == 'Debug'" />

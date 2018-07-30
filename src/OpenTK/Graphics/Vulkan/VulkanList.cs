@@ -11,7 +11,7 @@ namespace OpenTK.Graphics.Vulkan
 {
     using Debug = System.Diagnostics.Debug;
 
-    public unsafe class NativeList<T> : IEnumerable<T>, IDisposable where T : struct
+    public unsafe class VulkanList<T> : IEnumerable<T>, IDisposable where T : struct
     {
         private byte* _dataPtr;
         private uint _elementCapacity;
@@ -21,22 +21,27 @@ namespace OpenTK.Graphics.Vulkan
         private const float GrowthFactor = 2f;
         private static readonly uint s_elementByteSize = InitializeTypeSize();
 
-        public NativeList() : this(DefaultCapacity) { }
-        public NativeList(uint capacity)
+        public VulkanList() : this(DefaultCapacity) { }
+        public VulkanList(uint capacity)
         {
             Allocate(capacity);
         }
 
-        public NativeList(uint capacity, uint count)
+        public VulkanList(uint capacity, uint count)
         {
             Allocate(capacity);
             Count = count;
         }
 
-        public NativeList(NativeList<T> existingList)
+        public VulkanList(VulkanList<T> existingList)
         {
             Allocate(existingList._elementCapacity);
             Unsafe.CopyBlock(_dataPtr, existingList._dataPtr, existingList._count * s_elementByteSize);
+        }
+
+        public static VulkanList<T> New(uint count)
+        {
+            return new VulkanList<T>(count, count);
         }
 
         public IntPtr Data
@@ -386,14 +391,14 @@ namespace OpenTK.Graphics.Vulkan
         public struct View<ViewType> : IEnumerable<ViewType> where ViewType : struct
         {
             private static readonly uint s_elementByteSize = (uint)Unsafe.SizeOf<ViewType>();
-            private readonly NativeList<T> _parent;
+            private readonly VulkanList<T> _parent;
 
-            public View(NativeList<T> parent)
+            public View(VulkanList<T> parent)
             {
                 _parent = parent;
             }
 
-            public uint Count => (_parent.Count * NativeList<T>.s_elementByteSize) / s_elementByteSize;
+            public uint Count => (_parent.Count * VulkanList<T>.s_elementByteSize) / s_elementByteSize;
 
             public ViewType this[uint index]
             {
@@ -458,11 +463,11 @@ namespace OpenTK.Graphics.Vulkan
 
     public struct ReadOnlyNativeListView<T> : IEnumerable<T> where T : struct
     {
-        private readonly NativeList<T> _list;
+        private readonly VulkanList<T> _list;
         private readonly uint _start;
         public readonly uint Count;
 
-        public ReadOnlyNativeListView(NativeList<T> list, uint start, uint count)
+        public ReadOnlyNativeListView(VulkanList<T> list, uint start, uint count)
         {
             _list = list;
             _start = start;
