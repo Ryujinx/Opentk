@@ -1323,12 +1323,12 @@ XF86VidModeGetGammaRampSize(
                 {
                     XSetWindowAttributes attr = attributes.Value;
                     return XCreateWindow(display, parent, x, y, width, height, border_width, depth,
-                        (int)@class, visual, (IntPtr)valuemask, &attr);
+                        (int)@class, visual, (IntPtr)valuemask, (IntPtr)(&attr));
                 }
                 else
                 {
                     return XCreateWindow(display, parent, x, y, width, height, border_width, depth,
-                        (int)@class, visual, (IntPtr)valuemask, null);
+                        (int)@class, visual, (IntPtr)valuemask, (IntPtr)null);
                 }
             }
         }

@@ -65,7 +65,7 @@ namespace OpenTK.Platform.X11
         public extern static IntPtr XSynchronize(IntPtr display, bool onoff);
 
         [DllImport("libX11", EntryPoint = "XCreateWindow")]
-        public unsafe extern static IntPtr XCreateWindow(IntPtr display, IntPtr parent, int x, int y, int width, int height, int border_width, int depth, int xclass, IntPtr visual, IntPtr valuemask, XSetWindowAttributes* attributes);
+        public extern static IntPtr XCreateWindow(Display display, Window parent, int x, int y, int width, int height, int borderWidth, int depth, int xclass, IntPtr visual, IntPtr valueMask, IntPtr attributes);
 
         [DllImport("libX11", EntryPoint = "XCreateSimpleWindow")]//, CLSCompliant(false)]
         public extern static IntPtr XCreateSimpleWindow(IntPtr display, IntPtr parent, int x, int y, int width, int height, int border_width, UIntPtr border, UIntPtr background);
