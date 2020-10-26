@@ -1,11 +1,11 @@
- i m a g e :   V i s u a l   S t u d i o   2 0 1 7  
- i n i t :  
-     -   g i t   c o n f i g   - - g l o b a l   c o r e . a u t o c r l f   i n p u t  
- b u i l d _ s c r i p t :  
-     -   c m d :   b u i l d . c m d   N u G e t  
-     -   c m d :   . p a k e t \ p a k e t . e x e   i n s t a l l  
-     -   c m d :   g i t   d i f f   - - e x i t - c o d e  
- t e s t :   o f f  
- v e r s i o n :   0 . 0 . 1 . { b u i l d }  
- a r t i f a c t s :  
-     -   p a t h :   ' b i n \ * . n u p k g '  
+image: Visual Studio 2017 
+init: 
+  - git config --global core.autocrlf input 
+build_script: 
+  - cmd: build.cmd NuGet 
+  - cmd: .paket\paket.exe install 
+  - cmd: git diff --exit-code 
+test: off 
+version: 0.0.1.{build} 
+artifacts: 
+  - path: 'bin\*.nupkg' 

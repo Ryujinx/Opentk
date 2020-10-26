@@ -1,431 +1,431 @@
-  
- #   C r e a t e d   b y   h t t p s : / / w w w . g i t i g n o r e . i o / a p i / v i m , o s x , l i n u x , m a c o s , e m a c s , f s h a r p , c s h a r p , w i n d o w s , a n d r o i d , m o n o d e v e l o p , i n t e l l i j + a l l , v i s u a l s t u d i o , x a m a r i n s t u d i o , v i s u a l s t u d i o c o d e  
-  
- # # #   A n d r o i d   # # #  
- #   B u i l t   a p p l i c a t i o n   f i l e s  
- * . a p k  
- * . a p _  
-  
- #   F i l e s   f o r   t h e   A R T / D a l v i k   V M  
- * . d e x  
-  
- #   J a v a   c l a s s   f i l e s  
- * . c l a s s  
-  
- #   G e n e r a t e d   f i l e s  
- b i n /  
- g e n /  
- o u t /  
-  
- #   G r a d l e   f i l e s  
- . g r a d l e /  
-  
- #   L o c a l   c o n f i g u r a t i o n   f i l e   ( s d k   p a t h ,   e t c )  
- l o c a l . p r o p e r t i e s  
-  
- #   P r o g u a r d   f o l d e r   g e n e r a t e d   b y   E c l i p s e  
- p r o g u a r d /  
-  
- #   L o g   F i l e s  
- * . l o g  
-  
- #   A n d r o i d   S t u d i o   N a v i g a t i o n   e d i t o r   t e m p   f i l e s  
- . n a v i g a t i o n /  
-  
- #   A n d r o i d   S t u d i o   c a p t u r e s   f o l d e r  
- c a p t u r e s /  
-  
- #   I n t e l l i j  
- * . i m l  
- . i d e a / w o r k s p a c e . x m l  
- . i d e a / t a s k s . x m l  
- . i d e a / g r a d l e . x m l  
- . i d e a / d i c t i o n a r i e s  
- . i d e a / l i b r a r i e s  
-  
- #   E x t e r n a l   n a t i v e   b u i l d   f o l d e r   g e n e r a t e d   i n   A n d r o i d   S t u d i o   2 . 2   a n d   l a t e r  
- . e x t e r n a l N a t i v e B u i l d  
-  
- #   F r e e l i n e  
- f r e e l i n e . p y  
- f r e e l i n e /  
- f r e e l i n e _ p r o j e c t _ d e s c r i p t i o n . j s o n  
-  
- # # #   A n d r o i d   P a t c h   # # #  
- g e n - e x t e r n a l - a p k l i b s  
-  
- # # #   C s h a r p   # # #  
- # #   I g n o r e   V i s u a l   S t u d i o   t e m p o r a r y   f i l e s ,   b u i l d   r e s u l t s ,   a n d  
- # #   f i l e s   g e n e r a t e d   b y   p o p u l a r   V i s u a l   S t u d i o   a d d - o n s .  
- # #  
- # #   G e t   l a t e s t   f r o m   h t t p s : / / g i t h u b . c o m / g i t h u b / g i t i g n o r e / b l o b / m a s t e r / V i s u a l S t u d i o . g i t i g n o r e  
-  
- #   U s e r - s p e c i f i c   f i l e s  
- * . s u o  
- * . u s e r  
- * . u s e r o s s c a c h e  
- * . s l n . d o c s t a t e s  
-  
- #   U s e r - s p e c i f i c   f i l e s   ( M o n o D e v e l o p / X a m a r i n   S t u d i o )  
- * . u s e r p r e f s  
-  
- #   B u i l d   r e s u l t s  
- [ D d ] e b u g /  
- [ D d ] e b u g P u b l i c /  
- [ R r ] e l e a s e /  
- [ R r ] e l e a s e s /  
- x 6 4 /  
- x 8 6 /  
- b l d /  
- [ B b ] i n /  
- [ O o ] b j /  
- [ L l ] o g /  
-  
- #   V i s u a l   S t u d i o   2 0 1 5   c a c h e / o p t i o n s   d i r e c t o r y  
- . v s /  
- #   U n c o m m e n t   i f   y o u   h a v e   t a s k s   t h a t   c r e a t e   t h e   p r o j e c t ' s   s t a t i c   f i l e s   i n   w w w r o o t  
- # w w w r o o t /  
-  
- #   M S T e s t   t e s t   R e s u l t s  
- [ T t ] e s t [ R r ] e s u l t * /  
- [ B b ] u i l d [ L l ] o g . *  
-  
- #   N U N I T  
- * . V i s u a l S t a t e . x m l  
- T e s t R e s u l t . x m l  
-  
- #   B u i l d   R e s u l t s   o f   a n   A T L   P r o j e c t  
- [ D d ] e b u g P S /  
- [ R r ] e l e a s e P S /  
- d l l d a t a . c  
-  
- #   . N E T   C o r e  
- p r o j e c t . l o c k . j s o n  
- p r o j e c t . f r a g m e n t . l o c k . j s o n  
- a r t i f a c t s /  
- * * / P r o p e r t i e s / l a u n c h S e t t i n g s . j s o n  
-  
- * _ i . c  
- * _ p . c  
- * _ i . h  
- * . i l k  
- * . m e t a  
- * . o b j  
- * . p c h  
- * . p d b  
- * . p g c  
- * . p g d  
- * . r s p  
- * . s b r  
- * . t l b  
- * . t l i  
- * . t l h  
- * . t m p  
- * . t m p _ p r o j  
- * . v s p s c c  
- * . v s s s c c  
- . b u i l d s  
- * . p i d b  
- * . s v c l o g  
- * . s c c  
-  
- #   C h u t z p a h   T e s t   f i l e s  
- _ C h u t z p a h *  
-  
- #   V i s u a l   C + +   c a c h e   f i l e s  
- i p c h /  
- * . a p s  
- * . n c b  
- * . o p e n d b  
- * . o p e n s d f  
- * . s d f  
- * . c a c h e f i l e  
- * . V C . d b  
- * . V C . V C . o p e n d b  
-  
- #   V i s u a l   S t u d i o   p r o f i l e r  
- * . p s e s s  
- * . v s p  
- * . v s p x  
- * . s a p  
-  
- #   T F S   2 0 1 2   L o c a l   W o r k s p a c e  
- $ t f /  
-  
- #   G u i d a n c e   A u t o m a t i o n   T o o l k i t  
- * . g p S t a t e  
-  
- #   R e S h a r p e r   i s   a   . N E T   c o d i n g   a d d - i n  
- _ R e S h a r p e r * /  
- * . [ R r ] e [ S s ] h a r p e r  
- * . D o t S e t t i n g s . u s e r  
-  
- #   J u s t C o d e   i s   a   . N E T   c o d i n g   a d d - i n  
- . J u s t C o d e  
-  
- #   T e a m C i t y   i s   a   b u i l d   a d d - i n  
- _ T e a m C i t y *  
-  
- #   D o t C o v e r   i s   a   C o d e   C o v e r a g e   T o o l  
- * . d o t C o v e r  
-  
- #   V i s u a l   S t u d i o   c o d e   c o v e r a g e   r e s u l t s  
- * . c o v e r a g e  
- * . c o v e r a g e x m l  
-  
- #   N C r u n c h  
- _ N C r u n c h _ *  
- . * c r u n c h * . l o c a l . x m l  
- n C r u n c h T e m p _ *  
-  
- #   M i g h t y M o o s e  
- * . m m . *  
- A u t o T e s t . N e t /  
-  
- #   W e b   w o r k b e n c h   ( s a s s )  
- . s a s s - c a c h e /  
-  
- #   I n s t a l l s h i e l d   o u t p u t   f o l d e r  
- [ E e ] x p r e s s /  
-  
- #   D o c P r o j e c t   i s   a   d o c u m e n t a t i o n   g e n e r a t o r   a d d - i n  
- D o c P r o j e c t / b u i l d h e l p /  
- D o c P r o j e c t / H e l p / * . H x T  
- D o c P r o j e c t / H e l p / * . H x C  
- D o c P r o j e c t / H e l p / * . h h c  
- D o c P r o j e c t / H e l p / * . h h k  
- D o c P r o j e c t / H e l p / * . h h p  
- D o c P r o j e c t / H e l p / H t m l 2  
- D o c P r o j e c t / H e l p / h t m l  
-  
- #   C l i c k - O n c e   d i r e c t o r y  
- p u b l i s h /  
-  
- #   P u b l i s h   W e b   O u t p u t  
- * . [ P p ] u b l i s h . x m l  
- * . a z u r e P u b x m l  
- #   T O D O :   U n c o m m e n t   t h e   n e x t   l i n e   t o   i g n o r e   y o u r   w e b   d e p l o y   s e t t i n g s .  
- #   B y   d e f a u l t ,   s e n s i t i v e   i n f o r m a t i o n ,   s u c h   a s   e n c r y p t e d   p a s s w o r d  
- #   s h o u l d   b e   s t o r e d   i n   t h e   . p u b x m l . u s e r   f i l e .  
- # * . p u b x m l  
- * . p u b x m l . u s e r  
- * . p u b l i s h p r o j  
-  
- #   M i c r o s o f t   A z u r e   W e b   A p p   p u b l i s h   s e t t i n g s .   C o m m e n t   t h e   n e x t   l i n e   i f   y o u   w a n t   t o  
- #   c h e c k i n   y o u r   A z u r e   W e b   A p p   p u b l i s h   s e t t i n g s ,   b u t   s e n s i t i v e   i n f o r m a t i o n   c o n t a i n e d  
- #   i n   t h e s e   s c r i p t s   w i l l   b e   u n e n c r y p t e d  
- P u b l i s h S c r i p t s /  
-  
- #   N u G e t   P a c k a g e s  
- * . n u p k g  
- #   T h e   p a c k a g e s   f o l d e r   c a n   b e   i g n o r e d   b e c a u s e   o f   P a c k a g e   R e s t o r e  
- * * / p a c k a g e s / *  
- #   e x c e p t   b u i l d / ,   w h i c h   i s   u s e d   a s   a n   M S B u i l d   t a r g e t .  
- ! * * / p a c k a g e s / b u i l d /  
- #   U n c o m m e n t   i f   n e c e s s a r y   h o w e v e r   g e n e r a l l y   i t   w i l l   b e   r e g e n e r a t e d   w h e n   n e e d e d  
- # ! * * / p a c k a g e s / r e p o s i t o r i e s . c o n f i g  
- #   N u G e t   v 3 ' s   p r o j e c t . j s o n   f i l e s   p r o d u c e s   m o r e   i g n o r a b l e   f i l e s  
- * . n u g e t . p r o p s  
- * . n u g e t . t a r g e t s  
-  
- #   M i c r o s o f t   A z u r e   B u i l d   O u t p u t  
- c s x /  
- * . b u i l d . c s d e f  
-  
- #   M i c r o s o f t   A z u r e   E m u l a t o r  
- e c f /  
- r c f /  
-  
- #   W i n d o w s   S t o r e   a p p   p a c k a g e   d i r e c t o r i e s   a n d   f i l e s  
- A p p P a c k a g e s /  
- B u n d l e A r t i f a c t s /  
- P a c k a g e . S t o r e A s s o c i a t i o n . x m l  
- _ p k g i n f o . t x t  
-  
- #   V i s u a l   S t u d i o   c a c h e   f i l e s  
- #   f i l e s   e n d i n g   i n   . c a c h e   c a n   b e   i g n o r e d  
- * . [ C c ] a c h e  
- #   b u t   k e e p   t r a c k   o f   d i r e c t o r i e s   e n d i n g   i n   . c a c h e  
- ! * . [ C c ] a c h e /  
-  
- #   O t h e r s  
- C l i e n t B i n /  
- ~ $ *  
- * ~  
- * . d b m d l  
- * . d b p r o j . s c h e m a v i e w  
- * . j f m  
- * . p f x  
- * . p u b l i s h s e t t i n g s  
- o r l e a n s . c o d e g e n . c s  
-  
- #   S i n c e   t h e r e   a r e   m u l t i p l e   w o r k f l o w s ,   u n c o m m e n t   n e x t   l i n e   t o   i g n o r e   b o w e r _ c o m p o n e n t s  
- #   ( h t t p s : / / g i t h u b . c o m / g i t h u b / g i t i g n o r e / p u l l / 1 5 2 9 # i s s u e c o m m e n t - 1 0 4 3 7 2 6 2 2 )  
- # b o w e r _ c o m p o n e n t s /  
-  
- #   R I A / S i l v e r l i g h t   p r o j e c t s  
- G e n e r a t e d _ C o d e /  
-  
- #   B a c k u p   &   r e p o r t   f i l e s   f r o m   c o n v e r t i n g   a n   o l d   p r o j e c t   f i l e  
- #   t o   a   n e w e r   V i s u a l   S t u d i o   v e r s i o n .   B a c k u p   f i l e s   a r e   n o t   n e e d e d ,  
- #   b e c a u s e   w e   h a v e   g i t   ; - )  
- _ U p g r a d e R e p o r t _ F i l e s /  
- B a c k u p * /  
- U p g r a d e L o g * . X M L  
- U p g r a d e L o g * . h t m  
-  
- #   S Q L   S e r v e r   f i l e s  
- * . m d f  
- * . l d f  
- * . n d f  
-  
- #   B u s i n e s s   I n t e l l i g e n c e   p r o j e c t s  
- * . r d l . d a t a  
- * . b i m . l a y o u t  
- * . b i m _ * . s e t t i n g s  
-  
- #   M i c r o s o f t   F a k e s  
- F a k e s A s s e m b l i e s /  
-  
- #   G h o s t D o c   p l u g i n   s e t t i n g   f i l e  
- * . G h o s t D o c . x m l  
-  
- #   N o d e . j s   T o o l s   f o r   V i s u a l   S t u d i o  
- . n t v s _ a n a l y s i s . d a t  
- n o d e _ m o d u l e s /  
-  
- #   T y p e s c r i p t   v 1   d e c l a r a t i o n   f i l e s  
- t y p i n g s /  
-  
- #   V i s u a l   S t u d i o   6   b u i l d   l o g  
- * . p l g  
-  
- #   V i s u a l   S t u d i o   6   w o r k s p a c e   o p t i o n s   f i l e  
- * . o p t  
-  
- #   V i s u a l   S t u d i o   6   a u t o - g e n e r a t e d   w o r k s p a c e   f i l e   ( c o n t a i n s   w h i c h   f i l e s   w e r e   o p e n   e t c . )  
- * . v b w  
-  
- #   V i s u a l   S t u d i o   L i g h t S w i t c h   b u i l d   o u t p u t  
- * * / * . H T M L C l i e n t / G e n e r a t e d A r t i f a c t s  
- * * / * . D e s k t o p C l i e n t / G e n e r a t e d A r t i f a c t s  
- * * / * . D e s k t o p C l i e n t / M o d e l M a n i f e s t . x m l  
- * * / * . S e r v e r / G e n e r a t e d A r t i f a c t s  
- * * / * . S e r v e r / M o d e l M a n i f e s t . x m l  
- _ P v t _ E x t e n s i o n s  
-  
- #   P a k e t   d e p e n d e n c y   m a n a g e r  
- . p a k e t / p a k e t . e x e  
- p a k e t - f i l e s /  
- * . R e s t o r e . t a r g e t s  
-  
- #   F A K E   -   F #   M a k e  
- . f a k e /  
-  
- #   J e t B r a i n s   R i d e r  
- . i d e a /  
- * . s l n . i m l  
-  
- #   C o d e R u s h  
- . c r /  
-  
- #   P y t h o n   T o o l s   f o r   V i s u a l   S t u d i o   ( P T V S )  
- _ _ p y c a c h e _ _ /  
- * . p y c  
-  
- #   C a k e   -   U n c o m m e n t   i f   y o u   a r e   u s i n g   i t  
- #   t o o l s / * *  
- #   ! t o o l s / p a c k a g e s . c o n f i g  
-  
- #   T e l e r i k ' s   J u s t M o c k   c o n f i g u r a t i o n   f i l e  
- * . j m c o n f i g  
-  
- #   B i z T a l k   b u i l d   o u t p u t  
- * . b t p . c s  
- * . b t m . c s  
- * . o d x . c s  
- * . x s d . c s  
-  
- # # #   E m a c s   # # #  
- #   - * -   m o d e :   g i t i g n o r e ;   - * -  
- \ # * \ #  
- / . e m a c s . d e s k t o p  
- / . e m a c s . d e s k t o p . l o c k  
- * . e l c  
- a u t o - s a v e - l i s t  
- t r a m p  
- . \ # *  
-  
- #   O r g - m o d e  
- . o r g - i d - l o c a t i o n s  
- * _ a r c h i v e  
-  
- #   f l y m a k e - m o d e  
- * _ f l y m a k e . *  
-  
- #   e s h e l l   f i l e s  
- / e s h e l l / h i s t o r y  
- / e s h e l l / l a s t d i r  
-  
- #   e l p a   p a c k a g e s  
- / e l p a /  
-  
- #   r e f t e x   f i l e s  
- * . r e l  
-  
- #   A U C T e X   a u t o   f o l d e r  
- / a u t o /  
-  
- #   c a s k   p a c k a g e s  
- . c a s k /  
- d i s t /  
-  
- #   F l y c h e c k  
- f l y c h e c k _ * . e l  
-  
- #   s e r v e r   a u t h   d i r e c t o r y  
- / s e r v e r /  
-  
- #   p r o j e c t i l e s   f i l e s  
- . p r o j e c t i l e  
- p r o j e c t i l e - b o o k m a r k s . e l d  
-  
- #   d i r e c t o r y   c o n f i g u r a t i o n  
- . d i r - l o c a l s . e l  
-  
- #   s a v e p l a c e  
- p l a c e s  
-  
- #   u r l   c a c h e  
- u r l / c a c h e /  
-  
- #   c e d e t  
- e d e - p r o j e c t s . e l  
-  
- #   s m e x  
- s m e x - i t e m s  
-  
- #   c o m p a n y - s t a t i s t i c s  
- c o m p a n y - s t a t i s t i c s - c a c h e . e l  
-  
- #   a n a c o n d a - m o d e  
- a n a c o n d a - m o d e /  
-  
- # # #   f s h a r p   # # #  
- l i b / d e b u g  
- l i b / r e l e a s e  
- * . e x e  
- ! . p a k e t / p a k e t . b o o t s t r a p p e r . e x e  
-  
- # # #   I n t e l l i j + a l l   # # #  
- #   C o v e r s   J e t B r a i n s   I D E s :   I n t e l l i J ,   R u b y M i n e ,   P h p S t o r m ,   A p p C o d e ,   P y C h a r m ,   C L i o n ,   A n d r o i d   S tudio and Webstorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+ 
+# Created by https://www.gitignore.io/api/vim,osx,linux,macos,emacs,fsharp,csharp,windows,android,monodevelop,intellij+all,visualstudio,xamarinstudio,visualstudiocode 
+ 
+### Android ### 
+# Built application files 
+*.apk 
+*.ap_ 
+ 
+# Files for the ART/Dalvik VM 
+*.dex 
+ 
+# Java class files 
+*.class 
+ 
+# Generated files 
+bin/ 
+gen/ 
+out/ 
+ 
+# Gradle files 
+.gradle/ 
+ 
+# Local configuration file (sdk path, etc) 
+local.properties 
+ 
+# Proguard folder generated by Eclipse 
+proguard/ 
+ 
+# Log Files 
+*.log 
+ 
+# Android Studio Navigation editor temp files 
+.navigation/ 
+ 
+# Android Studio captures folder 
+captures/ 
+ 
+# Intellij 
+*.iml 
+.idea/workspace.xml 
+.idea/tasks.xml 
+.idea/gradle.xml 
+.idea/dictionaries 
+.idea/libraries 
+ 
+# External native build folder generated in Android Studio 2.2 and later 
+.externalNativeBuild 
+ 
+# Freeline 
+freeline.py 
+freeline/ 
+freeline_project_description.json 
+ 
+### Android Patch ### 
+gen-external-apklibs 
+ 
+### Csharp ### 
+## Ignore Visual Studio temporary files, build results, and 
+## files generated by popular Visual Studio add-ons. 
+## 
+## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore 
+ 
+# User-specific files 
+*.suo 
+*.user 
+*.userosscache 
+*.sln.docstates 
+ 
+# User-specific files (MonoDevelop/Xamarin Studio) 
+*.userprefs 
+ 
+# Build results 
+[Dd]ebug/ 
+[Dd]ebugPublic/ 
+[Rr]elease/ 
+[Rr]eleases/ 
+x64/ 
+x86/ 
+bld/ 
+[Bb]in/ 
+[Oo]bj/ 
+[Ll]og/ 
+ 
+# Visual Studio 2015 cache/options directory 
+.vs/ 
+# Uncomment if you have tasks that create the project's static files in wwwroot 
+#wwwroot/ 
+ 
+# MSTest test Results 
+[Tt]est[Rr]esult*/ 
+[Bb]uild[Ll]og.* 
+ 
+# NUNIT 
+*.VisualState.xml 
+TestResult.xml 
+ 
+# Build Results of an ATL Project 
+[Dd]ebugPS/ 
+[Rr]eleasePS/ 
+dlldata.c 
+ 
+# .NET Core 
+project.lock.json 
+project.fragment.lock.json 
+artifacts/ 
+**/Properties/launchSettings.json 
+ 
+*_i.c 
+*_p.c 
+*_i.h 
+*.ilk 
+*.meta 
+*.obj 
+*.pch 
+*.pdb 
+*.pgc 
+*.pgd 
+*.rsp 
+*.sbr 
+*.tlb 
+*.tli 
+*.tlh 
+*.tmp 
+*.tmp_proj 
+*.vspscc 
+*.vssscc 
+.builds 
+*.pidb 
+*.svclog 
+*.scc 
+ 
+# Chutzpah Test files 
+_Chutzpah* 
+ 
+# Visual C++ cache files 
+ipch/ 
+*.aps 
+*.ncb 
+*.opendb 
+*.opensdf 
+*.sdf 
+*.cachefile 
+*.VC.db 
+*.VC.VC.opendb 
+ 
+# Visual Studio profiler 
+*.psess 
+*.vsp 
+*.vspx 
+*.sap 
+ 
+# TFS 2012 Local Workspace 
+$tf/ 
+ 
+# Guidance Automation Toolkit 
+*.gpState 
+ 
+# ReSharper is a .NET coding add-in 
+_ReSharper*/ 
+*.[Rr]e[Ss]harper 
+*.DotSettings.user 
+ 
+# JustCode is a .NET coding add-in 
+.JustCode 
+ 
+# TeamCity is a build add-in 
+_TeamCity* 
+ 
+# DotCover is a Code Coverage Tool 
+*.dotCover 
+ 
+# Visual Studio code coverage results 
+*.coverage 
+*.coveragexml 
+ 
+# NCrunch 
+_NCrunch_* 
+.*crunch*.local.xml 
+nCrunchTemp_* 
+ 
+# MightyMoose 
+*.mm.* 
+AutoTest.Net/ 
+ 
+# Web workbench (sass) 
+.sass-cache/ 
+ 
+# Installshield output folder 
+[Ee]xpress/ 
+ 
+# DocProject is a documentation generator add-in 
+DocProject/buildhelp/ 
+DocProject/Help/*.HxT 
+DocProject/Help/*.HxC 
+DocProject/Help/*.hhc 
+DocProject/Help/*.hhk 
+DocProject/Help/*.hhp 
+DocProject/Help/Html2 
+DocProject/Help/html 
+ 
+# Click-Once directory 
+publish/ 
+ 
+# Publish Web Output 
+*.[Pp]ublish.xml 
+*.azurePubxml 
+# TODO: Uncomment the next line to ignore your web deploy settings. 
+# By default, sensitive information, such as encrypted password 
+# should be stored in the .pubxml.user file. 
+#*.pubxml 
+*.pubxml.user 
+*.publishproj 
+ 
+# Microsoft Azure Web App publish settings. Comment the next line if you want to 
+# checkin your Azure Web App publish settings, but sensitive information contained 
+# in these scripts will be unencrypted 
+PublishScripts/ 
+ 
+# NuGet Packages 
+*.nupkg 
+# The packages folder can be ignored because of Package Restore 
+**/packages/* 
+# except build/, which is used as an MSBuild target. 
+!**/packages/build/ 
+# Uncomment if necessary however generally it will be regenerated when needed 
+#!**/packages/repositories.config 
+# NuGet v3's project.json files produces more ignorable files 
+*.nuget.props 
+*.nuget.targets 
+ 
+# Microsoft Azure Build Output 
+csx/ 
+*.build.csdef 
+ 
+# Microsoft Azure Emulator 
+ecf/ 
+rcf/ 
+ 
+# Windows Store app package directories and files 
+AppPackages/ 
+BundleArtifacts/ 
+Package.StoreAssociation.xml 
+_pkginfo.txt 
+ 
+# Visual Studio cache files 
+# files ending in .cache can be ignored 
+*.[Cc]ache 
+# but keep track of directories ending in .cache 
+!*.[Cc]ache/ 
+ 
+# Others 
+ClientBin/ 
+~$* 
+*~ 
+*.dbmdl 
+*.dbproj.schemaview 
+*.jfm 
+*.pfx 
+*.publishsettings 
+orleans.codegen.cs 
+ 
+# Since there are multiple workflows, uncomment next line to ignore bower_components 
+# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622) 
+#bower_components/ 
+ 
+# RIA/Silverlight projects 
+Generated_Code/ 
+ 
+# Backup & report files from converting an old project file 
+# to a newer Visual Studio version. Backup files are not needed, 
+# because we have git ;-) 
+_UpgradeReport_Files/ 
+Backup*/ 
+UpgradeLog*.XML 
+UpgradeLog*.htm 
+ 
+# SQL Server files 
+*.mdf 
+*.ldf 
+*.ndf 
+ 
+# Business Intelligence projects 
+*.rdl.data 
+*.bim.layout 
+*.bim_*.settings 
+ 
+# Microsoft Fakes 
+FakesAssemblies/ 
+ 
+# GhostDoc plugin setting file 
+*.GhostDoc.xml 
+ 
+# Node.js Tools for Visual Studio 
+.ntvs_analysis.dat 
+node_modules/ 
+ 
+# Typescript v1 declaration files 
+typings/ 
+ 
+# Visual Studio 6 build log 
+*.plg 
+ 
+# Visual Studio 6 workspace options file 
+*.opt 
+ 
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc.) 
+*.vbw 
+ 
+# Visual Studio LightSwitch build output 
+**/*.HTMLClient/GeneratedArtifacts 
+**/*.DesktopClient/GeneratedArtifacts 
+**/*.DesktopClient/ModelManifest.xml 
+**/*.Server/GeneratedArtifacts 
+**/*.Server/ModelManifest.xml 
+_Pvt_Extensions 
+ 
+# Paket dependency manager 
+.paket/paket.exe 
+paket-files/ 
+*.Restore.targets 
+ 
+# FAKE - F# Make 
+.fake/ 
+ 
+# JetBrains Rider 
+.idea/ 
+*.sln.iml 
+ 
+# CodeRush 
+.cr/ 
+ 
+# Python Tools for Visual Studio (PTVS) 
+__pycache__/ 
+*.pyc 
+ 
+# Cake - Uncomment if you are using it 
+# tools/** 
+# !tools/packages.config 
+ 
+# Telerik's JustMock configuration file 
+*.jmconfig 
+ 
+# BizTalk build output 
+*.btp.cs 
+*.btm.cs 
+*.odx.cs 
+*.xsd.cs 
+ 
+### Emacs ### 
+# -*- mode: gitignore; -*- 
+\#*\# 
+/.emacs.desktop 
+/.emacs.desktop.lock 
+*.elc 
+auto-save-list 
+tramp 
+.\#* 
+ 
+# Org-mode 
+.org-id-locations 
+*_archive 
+ 
+# flymake-mode 
+*_flymake.* 
+ 
+# eshell files 
+/eshell/history 
+/eshell/lastdir 
+ 
+# elpa packages 
+/elpa/ 
+ 
+# reftex files 
+*.rel 
+ 
+# AUCTeX auto folder 
+/auto/ 
+ 
+# cask packages 
+.cask/ 
+dist/ 
+ 
+# Flycheck 
+flycheck_*.el 
+ 
+# server auth directory 
+/server/ 
+ 
+# projectiles files 
+.projectile 
+projectile-bookmarks.eld 
+ 
+# directory configuration 
+.dir-locals.el 
+ 
+# saveplace 
+places 
+ 
+# url cache 
+url/cache/ 
+ 
+# cedet 
+ede-projects.el 
+ 
+# smex 
+smex-items 
+ 
+# company-statistics 
+company-statistics-cache.el 
+ 
+# anaconda-mode 
+anaconda-mode/ 
+ 
+### fsharp ### 
+lib/debug 
+lib/release 
+*.exe 
+!.paket/paket.bootstrapper.exe 
+ 
+### Intellij+all ### 
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android StudioandWebstorm
+#Reference:https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# User-specific stuff:
+#User-specificstuff:
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 
-# Sensitive or high-churn files:
+#Sensitiveorhigh-churnfiles:
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.xml
@@ -434,68 +434,68 @@
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 
-# Gradle:
+#Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
 
-# CMake
+#CMake
 cmake-build-debug/
 
-# Mongo Explorer plugin:
+#MongoExplorerplugin:
 .idea/**/mongoSettings.xml
 
-## File-based project format:
+##File-basedprojectformat:
 *.iws
 
-## Plugin-specific files:
+##Plugin-specificfiles:
 
-# IntelliJ
+#IntelliJ
 /out/
 
-# mpeltonen/sbt-idea plugin
+#mpeltonen/sbt-ideaplugin
 .idea_modules/
 
-# JIRA plugin
+#JIRAplugin
 atlassian-ide-plugin.xml
 
-# Cursive Clojure plugin
+#CursiveClojureplugin
 .idea/replstate.xml
 
-# Ruby plugin and RubyMine
+#RubypluginandRubyMine
 /.rakeTasks
 
-# Crashlytics plugin (for Android Studio and IntelliJ)
+#Crashlyticsplugin(forAndroidStudioandIntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-### Linux ###
+###Linux###
 
-# temporary files which can be created if a process still has a handle open of a deleted file
+#temporaryfileswhichcanbecreatedifaprocessstillhasahandleopenofadeletedfile
 .fuse_hidden*
 
-# KDE directory preferences
+#KDEdirectorypreferences
 .directory
 
-# Linux trash folder which might appear on any partition or disk
+#Linuxtrashfolderwhichmightappearonanypartitionordisk
 .Trash-*
 
-# .nfs files are created when an open file is removed but is still being accessed
+#.nfsfilesarecreatedwhenanopenfileisremovedbutisstillbeingaccessed
 .nfs*
 
-### macOS ###
+###macOS###
 *.DS_Store
 .AppleDouble
 .LSOverride
 
-# Icon must end with two \r
+#Iconmustendwithtwo\r
 Icon
 
-# Thumbnails
+#Thumbnails
 ._*
 
-# Files that might appear in the root of a volume
+#Filesthatmightappearintherootofavolume
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
@@ -504,45 +504,45 @@ Icon
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
-# Directories potentially created on remote AFP share
+#DirectoriespotentiallycreatedonremoteAFPshare
 .AppleDB
 .AppleDesktop
-Network Trash Folder
-Temporary Items
+NetworkTrashFolder
+TemporaryItems
 .apdisk
 
-### MonoDevelop ###
-#User Specific
+###MonoDevelop###
+#UserSpecific
 *.usertasks
 
-#Mono Project Files
+#MonoProjectFiles
 *.resources
 test-results/
 
-### OSX ###
+###OSX###
 
-# Icon must end with two \r
+#Iconmustendwithtwo\r
 
-# Thumbnails
+#Thumbnails
 
-# Files that might appear in the root of a volume
+#Filesthatmightappearintherootofavolume
 
-# Directories potentially created on remote AFP share
+#DirectoriespotentiallycreatedonremoteAFPshare
 
-### Vim ###
-# swap
+###Vim###
+#swap
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
 [._]s[a-v][a-z]
 [._]sw[a-p]
-# session
+#session
 Session.vim
-# temporary
+#temporary
 .netrwhist
-# auto-generated tag files
+#auto-generatedtagfiles
 tags
 
-### VisualStudioCode ###
+###VisualStudioCode###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -550,37 +550,37 @@ tags
 !.vscode/extensions.json
 .history
 
-### Windows ###
-# Windows thumbnail cache files
+###Windows###
+#Windowsthumbnailcachefiles
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
 
-# Folder config file
+#Folderconfigfile
 Desktop.ini
 
-# Recycle Bin used on file shares
+#RecycleBinusedonfileshares
 $RECYCLE.BIN/
 
-# Windows Installer files
+#WindowsInstallerfiles
 *.cab
 *.msi
 *.msm
 *.msp
 
-# Windows shortcuts
+#Windowsshortcuts
 *.lnk
 
-### XamarinStudio ###
+###XamarinStudio###
 .packages
 
-### Paket ###
+###Paket###
 Paket.Restore.targets
 
-### Mono Code Coverage ###
+###MonoCodeCoverage###
 TestResults.xml
 
-### OpenTK Binding files ###
+###OpenTKBindingfiles###
 .bindingsGenerated
 src/OpenTK/Graphics/ES11/ES11.cs
 src/OpenTK/Graphics/ES11/ES11Enums.cs
@@ -591,21 +591,21 @@ src/OpenTK/Graphics/OpenGL/GLEnums.cs
 src/OpenTK/Graphics/OpenGL4/GL4.cs
 src/OpenTK/Graphics/OpenGL4/GL4Enums.cs
 
-### OpenTK AssemblyInfo files ###
+###OpenTKAssemblyInfofiles###
 **/AssemblyInfo.cs
 **/AssemblyInfo.fs
 
-## Ignore Visual Studio temporary files, build results, and
-## files generated by popular Visual Studio add-ons.
+##IgnoreVisualStudiotemporaryfiles,buildresults,and
+##filesgeneratedbypopularVisualStudioadd-ons.
 
-# User-specific files
+#User-specificfiles
 *.suo
 *.user
 *.sln.docstates
 .vs
 .vscode
 
-# Build results
+#Buildresults
 
 [Dd]ebug/
 [Rr]elease/
@@ -614,10 +614,10 @@ build/
 [Bb]in/
 [Oo]bj/
 
-# Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
+#Enable"build/"folderintheNuGetPackagesfoldersinceNuGetpackagesuseitforMSBuildtargets
 !packages/*/build/
 
-# MSTest test Results
+#MSTesttestResults
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
@@ -645,7 +645,7 @@ build/
 *.log
 *.scc
 
-# Visual C++ cache files
+#VisualC++cachefiles
 ipch/
 *.aps
 *.ncb
@@ -653,32 +653,32 @@ ipch/
 *.sdf
 *.cachefile
 
-# Visual Studio profiler
+#VisualStudioprofiler
 *.psess
 *.vsp
 *.vspx
 
-# Guidance Automation Toolkit
+#GuidanceAutomationToolkit
 *.gpState
 
-# ReSharper is a .NET coding add-in
+#ReSharperisa.NETcodingadd-in
 _ReSharper*/
 *.[Rr]e[Ss]harper
 
-# TeamCity is a build add-in
+#TeamCityisabuildadd-in
 _TeamCity*
 
-# DotCover is a Code Coverage Tool
+#DotCoverisaCodeCoverageTool
 *.dotCover
 
-# NCrunch
+#NCrunch
 *.ncrunch*
 .*crunch*.local.xml
 
-# Installshield output folder
+#Installshieldoutputfolder
 [Ee]xpress/
 
-# DocProject is a documentation generator add-in
+#DocProjectisadocumentationgeneratoradd-in
 DocProject/buildhelp/
 DocProject/Help/*.HxT
 DocProject/Help/*.HxC
@@ -688,24 +688,24 @@ DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
-# Click-Once directory
+#Click-Oncedirectory
 publish/
 
-# Publish Web Output
+#PublishWebOutput
 *.Publish.xml
 
-# NuGet Packages Directory
-## TODO: If you have NuGet Package Restore enabled, uncomment the next line
+#NuGetPackagesDirectory
+##TODO:IfyouhaveNuGetPackageRestoreenabled,uncommentthenextline
 #packages/
 
-# Windows Azure Build Output
+#WindowsAzureBuildOutput
 csx
 *.build.csdef
 
-# Windows Store app package directory
+#WindowsStoreapppackagedirectory
 AppPackages/
 
-# Others
+#Others
 sql/
 *.Cache
 ClientBin/
@@ -719,45 +719,45 @@ ClientBin/
 packages/*
 *.config
 
-# RIA/Silverlight projects
+#RIA/Silverlightprojects
 Generated_Code/
 
-# Backup & report files from converting an old project file to a newer
-# Visual Studio version. Backup files are not needed, because we have git ;-)
+#Backup&reportfilesfromconvertinganoldprojectfiletoanewer
+#VisualStudioversion.Backupfilesarenotneeded,becausewehavegit;-)
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
 UpgradeLog*.htm
 
-# SQL Server files
+#SQLServerfiles
 App_Data/*.mdf
 App_Data/*.ldf
 
 
-#LightSwitch generated files
+#LightSwitchgeneratedfiles
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
-# =========================
-# Windows detritus
-# =========================
+#=========================
+#Windowsdetritus
+#=========================
 
-# Windows image file caches
+#Windowsimagefilecaches
 Thumbs.db
 ehthumbs.db
 
-# Folder config file
+#Folderconfigfile
 Desktop.ini
 
-# Recycle Bin used on file shares
+#RecycleBinusedonfileshares
 $RECYCLE.BIN/
 
-# Mac desktop service store files
+#Macdesktopservicestorefiles
 .DS_Store
 
-# VS Launch Settings
+#VSLaunchSettings
 launchSettings.json
 
-# NetCore Publishing Profiles
+#NetCorePublishingProfiles
 PublishProfiles/
